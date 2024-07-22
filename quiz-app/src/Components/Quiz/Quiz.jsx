@@ -10,12 +10,14 @@ const Quiz = () => {
   let [lock,setLock]=useState(false);
 
   const checkAns = (e,ans) => {
-    if (question.ans===ans) {
-      e.target.classList.add("correct");
-    }
-    else{
-      e.target.classList.add("wrong");
-    }
+    if (lock === false) {
+      if (question.ans===ans) {
+        e.target.classList.add("correct");
+      }
+      else{
+        e.target.classList.add("wrong");
+      }
+    }   
   }
 
   return (
