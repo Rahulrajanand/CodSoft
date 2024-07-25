@@ -84,7 +84,7 @@ const Register = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="abc@gmail.com"
+                  placeholder="your@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
