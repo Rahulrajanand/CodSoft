@@ -1,16 +1,11 @@
-import React from 'react'
-import './App.css'
-import Quiz from './Components/Quiz/Quiz'
+import React from "react";
+import "./App.css";
+import Quiz from "./Components/Quiz";
 
-
-function App() {
-  
-
+export default function App() {
   return (
-    <>
-      <Quiz/>
-    </>
-  )
+    <div>
+      <Quiz />
+    </div>
+  );
 }
-
-export default App

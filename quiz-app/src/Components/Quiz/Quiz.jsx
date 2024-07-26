@@ -25,9 +25,9 @@ const Quiz = () => {
       else{
         e.target.classList.add("wrong");
         setLock(true);
-        option_array[question.ans-1].current
+        option_array[question.ans-1].current.classList.add("correct")
       }
-    }   
+    }    
   }
 
   return (
@@ -36,10 +36,10 @@ const Quiz = () => {
         <hr />
         <h2>{index+1}. {question.question}</h2>
         <ul>
-            <li onClick={(e)=>{checkAns(e,1)}}>{question.option1}</li>
-            <li onClick={(e)=>{checkAns(e,2)}}>{question.option2}</li>
-            <li onClick={(e)=>{checkAns(e,3)}}>{question.option3}</li>
-            <li onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
+            <li ref={Option1} onClick={(e)=>{checkAns(e,1)}}>{question.option1}</li>
+            <li ref={Option2} onClick={(e)=>{checkAns(e,2)}}>{question.option2}</li>
+            <li ref={Option3} onClick={(e)=>{checkAns(e,3)}}>{question.option3}</li>
+            <li ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
             
         </ul>
         <button>Next</button>

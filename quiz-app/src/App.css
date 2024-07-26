@@ -1,42 +1,85 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  height: 100vh;
+  background-color: aliceblue;
+  display: grid;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container hr {
+  height: 2px;
+  border: none;
+  background-color: gray;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Q-box {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid gray;
+  padding: 10px 20px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.Q-box h2 {
+  margin-bottom: 10px;
+  color: rgb(79, 79, 79);
+  font-size: 1rem;
+}
+.Q-box p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Q-box p strong {
+  margin: 0 4px;
+}
+.Q-box p img {
+  margin-left: 10px;
+}
+.Q-box ul li {
+  list-style-type: none;
+  color: rgb(79, 79, 79);
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.Q-box button {
+  font-family: "Ubuntu Sans", sans-serif;
+  align-self: center;
+  max-width: 150px;
+  width: 100%;
+  padding: 10px;
+  background-color: blueviolet;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+.Q-box .index {
+  color: rgb(79, 79, 79);
+  margin: auto;
+  font-size: 1rem;
+}
+.Q-box .correctAns {
+  color: black !important;
+  background-color: #e3ffe3;
+}
+.Q-box .wrongAns {
+  color: black !important;
+  background-color: rgb(255, 212, 212);
+}
+@media screen and (max-width: 600px) {
+  .Q-box {
+    border: none;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
